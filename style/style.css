@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+  font-weight: bolder;
+  background-image: url(../images/fon.jpg);
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+button {
+  font-size: 15px;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  background-color: #2d368b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#noteContainer {
+  max-width: 700px;
+  margin-bottom: 20px;
+}
+
+.note {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
