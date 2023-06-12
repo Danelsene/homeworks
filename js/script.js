@@ -1,4 +1,3 @@
-// Функція для отримання записів з LocalStorage
 function getNotes() {
   const notes = localStorage.getItem('notes');
   if (notes) {
@@ -7,12 +6,12 @@ function getNotes() {
   return [];
 }
 
-// Функція для збереження записів в LocalStorage
+
 function saveNotes(notes) {
   localStorage.setItem('notes', notes.join(','));
 }
 
-// Функція для додавання запису
+
 function addNote() {
   const note = prompt('Введіть текст запису:');
   if (note) {
@@ -23,7 +22,7 @@ function addNote() {
   }
 }
 
-// Функція для видалення запису за індексом
+
 function deleteNote(index) {
   const notes = getNotes();
   notes.splice(index, 1);
@@ -31,7 +30,7 @@ function deleteNote(index) {
   renderNotes();
 }
 
-// Функція для редагування запису за індексом
+
 function editNote(index) {
   const notes = getNotes();
   const updatedNote = prompt('Введіть новий текст запису:', notes[index]);
@@ -42,7 +41,7 @@ function editNote(index) {
   }
 }
 
-// Функція для відображення записів на екрані
+
 function renderNotes() {
   const notesContainer = document.getElementById('noteContainer');
   notesContainer.innerHTML = '';
@@ -67,5 +66,5 @@ function renderNotes() {
   });
 }
 
-// Відображення записів при завантаженні сторінки
+
 renderNotes();
